@@ -2,6 +2,7 @@ From: me@gmail.com
 Subject: Hello
 eddie
 the grey hare is so damn Gray
-<H1>
-<H2>
+<H1>Hello</H1>
+<H2>How are you</H2>
 t@g.c
+01-12-82 01.12.82 01/12/82 01?12?82

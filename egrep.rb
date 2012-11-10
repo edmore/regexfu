@@ -2,8 +2,10 @@
 
 def evaluate( expression, description )
   puts description + "\n" + "[ Regex:  " + expression + " ] "
-  system "egrep '#{expression}' supadupafile.txt"
+  system "egrep '#{expression}' `find . -name \"*.txt\"`"
 end
+
+puts "File(s) used for regex matching:" + "\n" + `find . -name \"*.txt\"`
 
 evaluate '[Gg]r[ae]y', '# Test character classes'
 

@@ -20,3 +20,9 @@ evaluate '^(From|Subject):', '# Alternatives'
 evaluate '(Fir|1)st [Ss]treet', '# More alternatives'
 
 evaluate '(First|1st) (S|s)treet', '# More readable maybe?'
+
+evaluate '\<cat\>', '# Word boundaries'
+
+evaluate '\<cat', '# Words starting with a particular string'
+
+evaluate '\<[Cc]at', '# Word boundaries and character class'

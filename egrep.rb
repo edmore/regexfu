@@ -1,8 +1,7 @@
 #! /usr/bin/env ruby
 
 def evaluate( expression, description )
-  puts description
-  puts "[ Regex:  " + expression + " ] "
+  puts description + "\n" + "[ Regex:  " + expression + " ] "
   system "egrep '#{expression}' supadupafile.txt"
 end
 

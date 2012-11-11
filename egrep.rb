@@ -26,3 +26,11 @@ evaluate '\<cat\>', '# Word boundaries'
 evaluate '\<cat', '# Words starting with a particular string'
 
 evaluate '\<[Cc]at', '# Word boundaries and character class'
+
+evaluate '[Cc]olou?r', '# Optionals [?], zero or more'
+
+evaluate '(gr)?eat', 'More use of optionals'
+
+evaluate '[^r]eat', 'Character class with negation [^]'
+
+evaluate '\<(gr)?eat\>', 'Optional [?] + parenthesis + word boundary '

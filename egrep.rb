@@ -29,10 +29,10 @@ evaluate '\<[Cc]at', '# Word boundaries and character class'
 
 evaluate '[Cc]olou?r', '# Optionals [?], zero or more'
 
-evaluate '(gr)?eat', 'More use of optionals'
+evaluate '(gr)?eat', '# More use of optionals'
 
-evaluate '[^r]eat', 'Character class with negation [^]'
+evaluate '[^r]eat', '# Character class with negation [^]'
 
-evaluate '\<(gr)?eat\>', 'Optional [?] + parenthesis + word boundary '
+evaluate '\<(gr)?eat\>', '# Optional [?] + parenthesis + word boundary '
 
-evaluate '\<gr(e)+t\>', 'One or more (+)'
+evaluate '\<gr(e)+t\>', '# One or more (+)'

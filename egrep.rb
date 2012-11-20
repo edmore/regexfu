@@ -34,3 +34,5 @@ evaluate '(gr)?eat', 'More use of optionals'
 evaluate '[^r]eat', 'Character class with negation [^]'
 
 evaluate '\<(gr)?eat\>', 'Optional [?] + parenthesis + word boundary '
+
+evaluate '\<gr(e)+t\>', 'One or more (+)'

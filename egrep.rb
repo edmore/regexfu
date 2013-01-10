@@ -42,3 +42,14 @@ evaluate '[Cc]olou{0,1}r', '# Optional [?] === interval {0,1}, zero or one'
 evaluate '\<the +the\>', '# Match any words that repeat regardless of blanks'
 
 evaluate '([A-Za-z]+) +\1', '# Match any words that match parentheses using backreferences'
+
+evaluate '\([A-Za-z]+\)', '# Match special characters as literals'
+
+evaluate '"[^"]*"', '# Match anything within quotes or just an empty quote'
+
+evaluate '[-0-9]', "# Match a literal dash or a range of digits"
+
+evaluate '([1-9]|1[012]):[0-5][0-9] (am|pm)', "# 12 hour time"
+
+evaluate '((0|1)[0-9]|2[0-3]):[0-5][0-9]', "# 24 hour time"
+

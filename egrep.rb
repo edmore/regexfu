@@ -1,7 +1,7 @@
 #! /usr/bin/env ruby
 
 def evaluate( expression, description )
-  puts description + "\n" + "[ Regex:  " + expression + " ] "
+  puts description + " ... " + "\n" + "[ Regex:  " + expression + " ] "
   system "egrep '#{expression}' `find . -name \"*.txt\"`"
 end
 
@@ -27,7 +27,7 @@ evaluate '\<cat', '# Words starting with a particular string'
 
 evaluate '\<[Cc]at', '# Word boundaries and character class'
 
-evaluate '[Cc]olou?r', '# Optionals [?], zero or one'
+evaluate '[Cc]olou?r', '# Optional [?], zero or one'
 
 evaluate '(gr)?eat', '# More use of optionals'
 
@@ -36,3 +36,9 @@ evaluate '[^r]eat', '# Character class with negation [^]'
 evaluate '\<(gr)?eat\>', '# Optional [?] + parenthesis + word boundary '
 
 evaluate '\<gr(e)+t\>', '# One or more (+)'
+
+evaluate '[Cc]olou{0,1}r', '# Optional [?] === interval {0,1}, zero or one'
+
+evaluate '\<the +the\>', '# Match any words that repeat regardless of blanks'
+
+evaluate '([A-Za-z]+) +\1', '# Match any words that match parentheses using backreferences'

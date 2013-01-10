@@ -27,7 +27,7 @@ evaluate '\<cat', '# Words starting with a particular string'
 
 evaluate '\<[Cc]at', '# Word boundaries and character class'
 
-evaluate '[Cc]olou?r', '# Optionals [?], zero or more'
+evaluate '[Cc]olou?r', '# Optionals [?], zero or one'
 
 evaluate '(gr)?eat', '# More use of optionals'
 

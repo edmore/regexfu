@@ -6,4 +6,4 @@ Random Regex stuff as I read "Mastering Regular Expressions"
 4. ./egrep.rb
 
 Dependencies:
-egrep
+- egrep
